@@ -14,10 +14,10 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 
         int formattedHours = hours % 12;
-        if (formattedHours == 0) {
+        if (formattedHours == 0 && hours >= 12) {
             formattedHours = 12;  
         }
-        
+    
         String period;
         if (hours>= 12){
             period = "PM";
@@ -33,8 +33,6 @@ public class TimeFormat {
         else{
             formattedMinutes = "" + minutes;
         }
-
-        
         
         System.out.println(formattedHours + ":" + formattedMinutes + " " + period);
     }
