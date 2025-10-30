@@ -8,6 +8,6 @@ public class Bill3 {
         double inputBill = Double.parseDouble(args[3]);
         double billPerPerson = inputBill / 3;
         System.out.println("Dear " + name3 + ", " + name2 + ", and "
-                           + name1 +": pay " + Math.ceil(billPerPerson) + " shekels each.");
+                           + name1 +": pay " + Math.ceil(billPerPerson) + " Shekels each.");
 	}
 }

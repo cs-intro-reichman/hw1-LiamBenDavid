@@ -7,7 +7,7 @@ public class FVCalc {
         double numericInterestRate = Double.parseDouble(interestRate);
         String years = args[2];
         int numericYears = Integer.parseInt(years);
-        double futureValue = numericValue * Math.pow((1+numericInterestRate), numericYears);
+        double futureValue = numericValue * Math.pow((1+numericInterestRate/100), numericYears);
 
         System.out.println ("After " + numericYears + " years, $" + numericValue + " saved at "
                             + numericInterestRate + "% will yield $" + (int)(futureValue));
